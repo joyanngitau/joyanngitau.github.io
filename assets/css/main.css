@@ -5,7 +5,7 @@
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
+code, del, dfn, em, video, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
@@ -2629,7 +2629,7 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.image img {
+		.image video {
 			display: block;
 			border-radius: 4px;
 		}
@@ -2639,7 +2639,7 @@ input, select, textarea {
 			max-width: 10rem;
 		}
 
-			.image.left img, .image.right img {
+			.image.left video, .image.right video {
 				width: 100%;
 			}
 
@@ -2661,7 +2661,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.fit img {
+			.image.fit video {
 				width: 100%;
 			}
 
@@ -2671,7 +2671,62 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main img {
+			.image.main video {
+				width: 100%;
+			}
+			
+/* Video */
+
+	.image {
+		border: 0;
+		border-radius: 4px;
+		display: inline-block;
+		position: relative;
+	}
+
+		.image video {
+			display: block;
+			border-radius: 4px;
+		}
+
+		.image.left, .image.right {
+			width: 40%;
+			max-width: 10rem;
+		}
+
+			.image.left video, .image.right video {
+				width: 100%;
+			}
+
+		.image.left {
+			float: left;
+			margin: 0 1.5rem 1rem 0;
+			top: 0.25rem;
+		}
+
+		.image.right {
+			float: right;
+			margin: 0 0 1rem 1.5rem;
+			top: 0.25rem;
+		}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2rem 0;
+			width: 100%;
+		}
+
+			.image.fit video {
+				width: 100%;
+			}
+
+		.image.main {
+			display: block;
+			margin: 0 0 3rem 0;
+			width: 100%;
+		}
+
+			.image.main video {
 				width: 100%;
 			}
 
@@ -3103,7 +3158,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onload-image-fade-up .image img {
+		.banner.onload-image-fade-up .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3122,7 +3177,11 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .banner.onload-image-fade-up .image img {
+		body.is-preload .banner.onload-image-fade-up .image video {
+			opacity: 0;
+		}
+
+		body.is-preload .banner.onload-image-fade-up .image video {
 			opacity: 0;
 		}
 
@@ -3133,7 +3192,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onload-image-fade-down .image img {
+		.banner.onload-image-fade-down .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3152,7 +3211,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .banner.onload-image-fade-down .image img {
+		body.is-preload .banner.onload-image-fade-down .image video {
 			opacity: 0;
 		}
 
@@ -3163,7 +3222,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onload-image-fade-left .image img {
+		.banner.onload-image-fade-left .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3182,7 +3241,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .banner.onload-image-fade-left .image img {
+		body.is-preload .banner.onload-image-fade-left .image video {
 			opacity: 0;
 		}
 
@@ -3193,7 +3252,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onload-image-fade-right .image img {
+		.banner.onload-image-fade-right .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3212,18 +3271,18 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .banner.onload-image-fade-right .image img {
+		body.is-preload .banner.onload-image-fade-right .image video {
 			opacity: 0;
 		}
 
-	.banner.onload-image-fade-in .image img {
+	.banner.onload-image-fade-in .image video {
 		-moz-transition: opacity 0.75s ease-in-out;
 		-webkit-transition: opacity 0.75s ease-in-out;
 		-ms-transition: opacity 0.75s ease-in-out;
 		transition: opacity 0.75s ease-in-out;
 	}
 
-	body.is-preload .banner.onload-image-fade-in .image img {
+	body.is-preload .banner.onload-image-fade-in .image video {
 		opacity: 0;
 	}
 
@@ -3305,7 +3364,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onscroll-image-fade-up .image img {
+		.banner.onscroll-image-fade-up .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3324,7 +3383,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.banner.onscroll-image-fade-up.is-inactive .image img {
+		.banner.onscroll-image-fade-up.is-inactive .image video {
 			opacity: 0;
 		}
 
@@ -3335,7 +3394,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onscroll-image-fade-down .image img {
+		.banner.onscroll-image-fade-down .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3354,7 +3413,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.banner.onscroll-image-fade-down.is-inactive .image img {
+		.banner.onscroll-image-fade-down.is-inactive .image video {
 			opacity: 0;
 		}
 
@@ -3365,7 +3424,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onscroll-image-fade-left .image img {
+		.banner.onscroll-image-fade-left .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3384,7 +3443,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.banner.onscroll-image-fade-left.is-inactive .image img {
+		.banner.onscroll-image-fade-left.is-inactive .image video {
 			opacity: 0;
 		}
 
@@ -3395,7 +3454,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onscroll-image-fade-right .image img {
+		.banner.onscroll-image-fade-right .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3414,18 +3473,18 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.banner.onscroll-image-fade-right.is-inactive .image img {
+		.banner.onscroll-image-fade-right.is-inactive .image video {
 			opacity: 0;
 		}
 
-	.banner.onscroll-image-fade-in .image img {
+	.banner.onscroll-image-fade-in .image video {
 		-moz-transition: opacity 0.75s ease-in-out;
 		-webkit-transition: opacity 0.75s ease-in-out;
 		-ms-transition: opacity 0.75s ease-in-out;
 		transition: opacity 0.75s ease-in-out;
 	}
 
-	.banner.onscroll-image-fade-in.is-inactive .image img {
+	.banner.onscroll-image-fade-in.is-inactive .image video {
 		opacity: 0;
 	}
 
@@ -3485,7 +3544,7 @@ input, select, textarea {
 			width: 50%;
 		}
 
-			.banner.style1 .image img {
+			.banner.style1 .image video {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -3620,14 +3679,14 @@ input, select, textarea {
 
 			}
 
-		.banner.style1.image-position-left .image img {
+		.banner.style1.image-position-left .image video {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.banner.style1.image-position-right .image img {
+		.banner.style1.image-position-right .image video {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -3684,7 +3743,7 @@ input, select, textarea {
 			border-radius: 0;
 		}
 
-			.banner.style2 .image img {
+			.banner.style2 .image video {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -3788,14 +3847,14 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		.banner.style2.image-position-left .image img {
+		.banner.style2.image-position-left .image video {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.banner.style2.image-position-right .image img {
+		.banner.style2.image-position-right .image video {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -3847,7 +3906,7 @@ input, select, textarea {
 			margin: 0 3.5rem 2rem 0;
 		}
 
-			.banner.style3 .image img {
+			.banner.style3 .image video {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -3980,14 +4039,14 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		.banner.style3.image-position-left .image img {
+		.banner.style3.image-position-left .image video {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.banner.style3.image-position-right .image img {
+		.banner.style3.image-position-right .image video {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -4042,7 +4101,7 @@ input, select, textarea {
 			margin-right: 3.5rem;
 		}
 
-			.banner.style4 .image img {
+			.banner.style4 .image video {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -4233,14 +4292,14 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		.banner.style4.image-position-left .image img {
+		.banner.style4.image-position-left .image video {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.banner.style4.image-position-right .image img {
+		.banner.style4.image-position-right .image video {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -4295,7 +4354,7 @@ input, select, textarea {
 			opacity: 0.5;
 		}
 
-			.banner.style5 .image img {
+			.banner.style5 .image video {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -4357,14 +4416,14 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		.banner.style5.image-position-left .image img {
+		.banner.style5.image-position-left .image video {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.banner.style5.image-position-right .image img {
+		.banner.style5.image-position-right .image video {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -4505,7 +4564,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.spotlight.onload-image-fade-up .image img {
+		.spotlight.onload-image-fade-up .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -4524,7 +4583,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .spotlight.onload-image-fade-up .image img {
+		body.is-preload .spotlight.onload-image-fade-up .image video {
 			opacity: 0;
 		}
 
@@ -4535,7 +4594,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.spotlight.onload-image-fade-down .image img {
+		.spotlight.onload-image-fade-down .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -4554,7 +4613,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .spotlight.onload-image-fade-down .image img {
+		body.is-preload .spotlight.onload-image-fade-down .image video {
 			opacity: 0;
 		}
 
@@ -4565,7 +4624,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.spotlight.onload-image-fade-left .image img {
+		.spotlight.onload-image-fade-left .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -4584,7 +4643,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .spotlight.onload-image-fade-left .image img {
+		body.is-preload .spotlight.onload-image-fade-left .image video {
 			opacity: 0;
 		}
 
@@ -4595,7 +4654,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.spotlight.onload-image-fade-right .image img {
+		.spotlight.onload-image-fade-right .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -4614,18 +4673,18 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .spotlight.onload-image-fade-right .image img {
+		body.is-preload .spotlight.onload-image-fade-right .image video {
 			opacity: 0;
 		}
 
-	.spotlight.onload-image-fade-in .image img {
+	.spotlight.onload-image-fade-in .image video {
 		-moz-transition: opacity 0.75s ease-in-out;
 		-webkit-transition: opacity 0.75s ease-in-out;
 		-ms-transition: opacity 0.75s ease-in-out;
 		transition: opacity 0.75s ease-in-out;
 	}
 
-	body.is-preload .spotlight.onload-image-fade-in .image img {
+	body.is-preload .spotlight.onload-image-fade-in .image video {
 		opacity: 0;
 	}
 
@@ -4707,7 +4766,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.spotlight.onscroll-image-fade-up .image img {
+		.spotlight.onscroll-image-fade-up .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -4726,7 +4785,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.spotlight.onscroll-image-fade-up.is-inactive .image img {
+		.spotlight.onscroll-image-fade-up.is-inactive .image video {
 			opacity: 0;
 		}
 
@@ -4737,7 +4796,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.spotlight.onscroll-image-fade-down .image img {
+		.spotlight.onscroll-image-fade-down .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -4756,7 +4815,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.spotlight.onscroll-image-fade-down.is-inactive .image img {
+		.spotlight.onscroll-image-fade-down.is-inactive .image video {
 			opacity: 0;
 		}
 
@@ -4767,7 +4826,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.spotlight.onscroll-image-fade-left .image img {
+		.spotlight.onscroll-image-fade-left .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -4786,7 +4845,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.spotlight.onscroll-image-fade-left.is-inactive .image img {
+		.spotlight.onscroll-image-fade-left.is-inactive .image video {
 			opacity: 0;
 		}
 
@@ -4797,7 +4856,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.spotlight.onscroll-image-fade-right .image img {
+		.spotlight.onscroll-image-fade-right .image video {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -4816,18 +4875,18 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.spotlight.onscroll-image-fade-right.is-inactive .image img {
+		.spotlight.onscroll-image-fade-right.is-inactive .image video {
 			opacity: 0;
 		}
 
-	.spotlight.onscroll-image-fade-in .image img {
+	.spotlight.onscroll-image-fade-in .image video {
 		-moz-transition: opacity 0.75s ease-in-out;
 		-webkit-transition: opacity 0.75s ease-in-out;
 		-ms-transition: opacity 0.75s ease-in-out;
 		transition: opacity 0.75s ease-in-out;
 	}
 
-	.spotlight.onscroll-image-fade-in.is-inactive .image img {
+	.spotlight.onscroll-image-fade-in.is-inactive .image video {
 		opacity: 0;
 	}
 
@@ -4888,7 +4947,7 @@ input, select, textarea {
 			border-radius: 0;
 		}
 
-			.spotlight.style1 .image img {
+			.spotlight.style1 .image video {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -4963,7 +5022,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-				.spotlight.style1 .image img {
+				.spotlight.style1 .image video {
 					position: relative;
 				}
 
@@ -4995,14 +5054,14 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		.spotlight.style1.image-position-left .image img {
+		.spotlight.style1.image-position-left .image video {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.spotlight.style1.image-position-right .image img {
+		.spotlight.style1.image-position-right .image video {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -5054,7 +5113,7 @@ input, select, textarea {
 			margin: 0 3.5rem 2rem 0;
 		}
 
-			.spotlight.style2 .image img {
+			.spotlight.style2 .image video {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -5183,14 +5242,14 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		.spotlight.style2.image-position-left .image img {
+		.spotlight.style2.image-position-left .image video {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.spotlight.style2.image-position-right .image img {
+		.spotlight.style2.image-position-right .image video {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -5245,7 +5304,7 @@ input, select, textarea {
 			margin-right: 3.5rem;
 		}
 
-			.spotlight.style3 .image img {
+			.spotlight.style3 .image video {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -5432,14 +5491,14 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		.spotlight.style3.image-position-left .image img {
+		.spotlight.style3.image-position-left .image video {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.spotlight.style3.image-position-right .image img {
+		.spotlight.style3.image-position-right .image video {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -5496,7 +5555,7 @@ input, select, textarea {
 			border-radius: 0;
 		}
 
-			.spotlight.style4 .image img {
+			.spotlight.style4 .image video {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -5612,14 +5671,14 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		.spotlight.style4.image-position-left .image img {
+		.spotlight.style4.image-position-left .image video {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.spotlight.style4.image-position-right .image img {
+		.spotlight.style4.image-position-right .image video {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -5676,7 +5735,7 @@ input, select, textarea {
 			border-radius: 0;
 		}
 
-			.spotlight.style5 .image img {
+			.spotlight.style5 .image video {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -5780,14 +5839,14 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		.spotlight.style5.image-position-left .image img {
+		.spotlight.style5.image-position-left .image video {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.spotlight.style5.image-position-right .image img {
+		.spotlight.style5.image-position-right .image video {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
