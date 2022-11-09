@@ -5,7 +5,7 @@
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, video, ins, kbd, q, s, samp,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
@@ -2629,7 +2629,7 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.image video {
+		.image img {
 			display: block;
 			border-radius: 4px;
 		}
@@ -2639,7 +2639,7 @@ input, select, textarea {
 			max-width: 10rem;
 		}
 
-			.image.left video, .image.right video {
+			.image.left img, .image.right img {
 				width: 100%;
 			}
 
@@ -2661,7 +2661,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.fit video {
+			.image.fit img {
 				width: 100%;
 			}
 
@@ -2671,7 +2671,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main video {
+			.image.main img {
 				width: 100%;
 			}
 			
@@ -3158,7 +3158,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onload-image-fade-up .image video {
+		.banner.onload-image-fade-up .image img {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3177,11 +3177,11 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .banner.onload-image-fade-up .image video {
+		body.is-preload .banner.onload-image-fade-up .image img {
 			opacity: 0;
 		}
 
-		body.is-preload .banner.onload-image-fade-up .image video {
+		body.is-preload .banner.onload-image-fade-up .image img {
 			opacity: 0;
 		}
 
@@ -3192,7 +3192,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onload-image-fade-down .image video {
+		.banner.onload-image-fade-down .image img {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3211,7 +3211,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .banner.onload-image-fade-down .image video {
+		body.is-preload .banner.onload-image-fade-down .image img {
 			opacity: 0;
 		}
 
@@ -3222,7 +3222,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onload-image-fade-left .image video {
+		.banner.onload-image-fade-left .image img {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3241,7 +3241,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .banner.onload-image-fade-left .image video {
+		body.is-preload .banner.onload-image-fade-left .image img {
 			opacity: 0;
 		}
 
@@ -3252,7 +3252,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onload-image-fade-right .image video {
+		.banner.onload-image-fade-right .image img {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3271,18 +3271,18 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		body.is-preload .banner.onload-image-fade-right .image video {
+		body.is-preload .banner.onload-image-fade-right .image img {
 			opacity: 0;
 		}
 
-	.banner.onload-image-fade-in .image video {
+	.banner.onload-image-fade-in .image img {
 		-moz-transition: opacity 0.75s ease-in-out;
 		-webkit-transition: opacity 0.75s ease-in-out;
 		-ms-transition: opacity 0.75s ease-in-out;
 		transition: opacity 0.75s ease-in-out;
 	}
 
-	body.is-preload .banner.onload-image-fade-in .image video {
+	body.is-preload .banner.onload-image-fade-in .image img {
 		opacity: 0;
 	}
 
@@ -3364,7 +3364,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onscroll-image-fade-up .image video {
+		.banner.onscroll-image-fade-up .image img {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3383,7 +3383,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.banner.onscroll-image-fade-up.is-inactive .image video {
+		.banner.onscroll-image-fade-up.is-inactive .image img {
 			opacity: 0;
 		}
 
@@ -3394,7 +3394,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onscroll-image-fade-down .image video {
+		.banner.onscroll-image-fade-down .image img {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3413,7 +3413,7 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.banner.onscroll-image-fade-down.is-inactive .image video {
+		.banner.onscroll-image-fade-down.is-inactive .image img {
 			opacity: 0;
 		}
 
@@ -3424,7 +3424,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onscroll-image-fade-left .image video {
+		.banner.onscroll-image-fade-left .image img {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3454,7 +3454,7 @@ input, select, textarea {
 		transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 	}
 
-		.banner.onscroll-image-fade-right .image video {
+		.banner.onscroll-image-fade-right .image img {
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
 			-ms-transition: opacity 0.75s ease-in-out;
@@ -3473,11 +3473,11 @@ input, select, textarea {
 		opacity: 0;
 	}
 
-		.banner.onscroll-image-fade-right.is-inactive .image video {
+		.banner.onscroll-image-fade-right.is-inactive .image img {
 			opacity: 0;
 		}
 
-	.banner.onscroll-image-fade-in .image video {
+	.banner.onscroll-image-fade-in .image img {
 		-moz-transition: opacity 0.75s ease-in-out;
 		-webkit-transition: opacity 0.75s ease-in-out;
 		-ms-transition: opacity 0.75s ease-in-out;
@@ -3544,7 +3544,7 @@ input, select, textarea {
 			width: 50%;
 		}
 
-			.banner.style1 .image video {
+			.banner.style1 .image img {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -3679,14 +3679,14 @@ input, select, textarea {
 
 			}
 
-		.banner.style1.image-position-left .image video {
+		.banner.style1.image-position-left .image img {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.banner.style1.image-position-right .image video {
+		.banner.style1.image-position-right .image img {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -3743,7 +3743,7 @@ input, select, textarea {
 			border-radius: 0;
 		}
 
-			.banner.style2 .image video {
+			.banner.style2 .image img {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
@@ -3847,14 +3847,14 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		.banner.style2.image-position-left .image video {
+		.banner.style2.image-position-left .image img {
 			-moz-object-position: left;
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
 		}
 
-		.banner.style2.image-position-right .image video {
+		.banner.style2.image-position-right .image img {
 			-moz-object-position: right;
 			-webkit-object-position: right;
 			-ms-object-position: right;
@@ -3906,7 +3906,7 @@ input, select, textarea {
 			margin: 0 3.5rem 2rem 0;
 		}
 
-			.banner.style3 .image video {
+			.banner.style3 .image img {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
