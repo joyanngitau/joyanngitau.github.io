@@ -4056,7 +4056,7 @@ input, select, textarea {
 /* Banner (style4) */
 
 	.banner.style4 {
-		padding: 7rem 7rem 5rem 7rem ;
+		/* padding: 4rem 7rem 5rem 7rem ; */
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -4094,7 +4094,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			border-radius: 0;
 			border: solid 1px;
-			width: 13rem;
+			width: 40rem;
 			height: 23.11111rem;
 			margin-top: 2.5rem;
 			margin-bottom: 5rem;
