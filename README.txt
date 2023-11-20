@@ -1,5 +1,4 @@
-Devjoyannn
-joyann.co.ke | @devjoyann
+joyann.co.ke | @joyanngitau
 
 
 Credits:
